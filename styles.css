@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    /* display flex allows us to move each box freely */
+    display: flex;
+    /* flex-direction allows us to stack or line up the boxes */
+    flex-direction: column;
+    /* aligh-items allows us to move all boxes to the center */
+    align-items: center;
+    /* height allows us to make the body take up the entire viewport */
+    height: 100vh;
+    /* justify-center allows us to have all the boxes in the center of the screen vertically */
+    justify-content: center;
+    /* background:url(); allows us to include an image use unsplash for free images */
+    background-image: url(images/midnight-explorations-under-the-full-moon-4k-gu.jpg);
+    background-size: contain;
+    /* This will center the image both horizontally and vertically at all times. */
+    background-position: center center;
+    /* The browser can also choose to display your background image as tiles depending on its size. To prevent this from happening, use no-repeat: */
+    background-repeat: no-repeat;
+    background-color: black;
+    /* cover tells the browser to make sure the image always covers the entire container, in this case html. The browser will cover the container even if it has to stretch the image or cut a little bit off the edges. */
+    background-size: cover;
+    overflow: hidden;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+    /* this ensures that the text will be in the center */
+    text-align: center;
+}
+
+.clock {
+    /* everything inside the .clock box will now be free to move around however the default is for them to aligned horizontally */
+    display: flex;
+}
+
+.clock div {
+    margin:5px;
+    position: relative;
+}
+
+.clock span {
+    width: 100px;
+    height: 80px;
+    color: aliceblue;
+    background-color: black;
+    opacity: .8;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    text-shadow: 2px 2px 4px white;
+}
+
+.clock .text {
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.clock #ampm {
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+}
